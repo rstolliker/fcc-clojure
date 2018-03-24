@@ -1,6 +1,16 @@
 # random-quote-generator
 
-A [reagent](https://github.com/reagent-project/reagent) application designed to ... well, that part is up to you.
+A single-page app which shows you a new random quote by clicking a button.
+
+Built for a Free Code Camp challenge, but written using ClojureScript instead of plain JavaScript.
+
+Technologies used:
+* ClojureScript
+* Reagent
+* HTML
+* Bootstrap
+
+I do not own the background image, it is taken from Wikipedia.
 
 ## Development Mode
 

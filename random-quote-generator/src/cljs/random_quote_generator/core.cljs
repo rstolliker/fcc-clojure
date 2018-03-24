@@ -20,8 +20,15 @@
 ;; Page
 
 (defn page [ratom]
-  [:div
-   "Welcome to reagent-figwheel."])
+  [:div {:class "container jumbotron text-center"
+         :id "outer"}
+   [:div {:class "row"} [:h1 {:id "title"} "Random Quote Generator"]]
+   [:div {:class "row"} [:p {:id "quote-space"} (:quote @ratom)]]
+   [:div {:class "row"}
+    [:button {:class "btn btn-primary"
+              :id "get-quote"
+              :on-click #(swap! ratom assoc-in [:quote] (rand-nth quotes))}
+     "Give me a quote"]]])
 
 
 
